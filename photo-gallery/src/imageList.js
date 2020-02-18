@@ -4,8 +4,8 @@ export default class HornedBeast extends Component {
     render() {
         return <li>
             <div className="info-container">
-                <h2>{this.props.beast.name}</h2>
-                <p className="beast-type">{this.props.beast.type}</p>
+                <h2>{this.props.beast.title}</h2>
+                <p className="beast-type">{this.props.beast.title}</p>
             </div>
             <div className="image-container">
                 <img

@@ -4,7 +4,7 @@ body {
     font-family: 'Heebo', "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
     background: cornsilk;
     margin: 0;
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 h1 {
@@ -30,6 +30,8 @@ header {
     justify-content: space-around;
     background: white;
     border-bottom: 1px solid orange;
+    width: 50%;
+    height: auto;
 }
 
 h1 {
@@ -56,8 +58,8 @@ section {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    height: 200px;
-    width: 200px;
+    height: 350px;
+    width: 325px;
     min-width: 200px;
     border: 1px solid black;
     background-color: white;

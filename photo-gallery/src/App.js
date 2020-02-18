@@ -21,20 +21,21 @@ render () {
     };
 
     return (
-        
+        <>
             <Header pan={pan}/>
-        //    {/* <main>
-        //        <section className="options">
-        //            <select className="beast-type" onChange={handleChange}/>
-        //            <option value="" defaultValue>
-        //                All Beast
-        //            </option>
-        //        </section>
-        //        <section className="list-section">
-        //            <ul className="hornedBeast">{hornedBeastNodes</ul>
-        //        </section>
-        //    </main> */}
-        
-    )
-}
-}
+           
+       
+                <main>
+               <section className="options">
+                   <select className="beast-type" onChange={handleChange}/>
+                   <option value="" defaultValue>
+                       All Beast
+                   </option>
+               </section>
+               <section className="list-section">
+                   <ul className="hornedBeast">{hornedBeast}> </ul>
+               </section>
+               </main>
+               </>
+           )
+    }}
