@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import HornedBeast from "./imageList";
+import hornedBeastData from "../src/imageItem.js";
+import Header from "../src/Header.js";
+import pan from './assets/pan.jpg';
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+state = { selected: null };
+
+render () {
+    const hornedBeast = hornedBeastData
+    .filter (hornedBeast => {
+        if (!this.state.selected) return true;
+        return hornedBeast.type === this.state.selected;
+    })
+    .map(horns =>  <HornedBeast beast={horns} />);
+
+    const handleChange = e => {
+        this.setState ({ selected: e.target.value});
+    };
+
+    return (
+        
+            <Header pan={pan}/>
+        //    {/* <main>
+        //        <section className="options">
+        //            <select className="beast-type" onChange={handleChange}/>
+        //            <option value="" defaultValue>
+        //                All Beast
+        //            </option>
+        //        </section>
+        //        <section className="list-section">
+        //            <ul className="hornedBeast">{hornedBeastNodes</ul>
+        //        </section>
+        //    </main> */}
+        
+    )
 }
-
-export default App;
+}

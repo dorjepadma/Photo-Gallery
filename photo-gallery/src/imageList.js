@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class hornedBeast extends Component {
+export default class HornedBeast extends Component {
     render() {
         return <li>
             <div className="info-container">

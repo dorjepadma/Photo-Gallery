@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 class Header extends Component {
-    renderHTML () {
-        return 
+    render () {
+        return (
         <header>
-            <img src= "../data/assets/pan.jpg" alt= "pan"/>
+             <img src={this.props.pan} alt= "pan"/>
             <h1>Great Horned Beasts of the World </h1>
         </header>
+ )
         ;
     }
 }
